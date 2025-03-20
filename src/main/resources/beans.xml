@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Setter Based Injection (Setter Methods of Person Class are used to inject values) -->
+    <!-- <bean id="person" class="in.experiment.Person">
+        <property name="name" value="Alice"/>
+        <property name="age" value="30"/>
+    </bean> -->
+    <!-- Constructor Based Injection (Constructor of Person Class is used to inject values) -->
+    <bean id="person" class="in.experiment.Components.Person">
+        <constructor-arg name="name" value="John Doe"/>
+        <constructor-arg name="age" value="30"/>
+    </bean>
+</beans>
