@@ -10,7 +10,7 @@ public class Vehicle {
     Engine engine;
 
     @Autowired
-    public Vehicle(@Qualifier("engineV8") Engine engine) {
+    public Vehicle(@Qualifier("engineV6") Engine engine) {
         this.engine = engine;
     }    
 
